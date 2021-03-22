@@ -1,0 +1,68 @@
+{
+	"posts": [
+		{
+			"postId": 129,
+			"timeshamp": 1569914716,
+			"title": "Пост19",
+			"preview_text": "Текст Поста",
+			"likes_count": 19738
+		},
+            {
+			"postId": 130,
+			"timeshamp": 1570008316,
+			"title": "Пост20",
+			"preview_text": "Текст Поста",
+			"likes_count": null
+		},
+        {
+			"postId": null,
+			"timeshamp": 1562059516,
+			"title": "Пост21",
+			"preview_text": "Текст Поста",
+			"likes_count": 6990
+		},
+        {
+			"postId": 132,
+			"timeshamp": 1564737916,
+			"title": "Пост22",
+			"preview_text": "Текст Поста",
+			"likes_count": 5300
+		},
+  	  	{
+			"postId": 133,
+			"timeshamp": 1554197116,
+			"title": "Пост23",
+			"preview_text": "Текст Поста",
+			"likes_count": 124
+		},
+  	  	{
+			"postId": 134,
+			"timeshamp": 1522661116,
+			"title": "Пост24",
+			"preview_text": "Текст Поста",
+			"likes_count": "3578"
+		},
+		{
+			"postId": "135",
+			"timeshamp": 1554197116,
+			"title": "Пост25",
+			"preview_text": "Текст Поста",
+			"likes_count": 3434
+		},
+		{
+			"postId": 136,
+			"timeshamp": 1554715516,
+			"title": "Пост26",
+			"preview_text": "Текст Поста",
+			"likes_count": 12
+		},
+		{
+			"postId": 137,
+			"timeshamp": 1554888316,
+			"title": "Пост27",
+			"preview_text": "Текст Поста",
+			"likes_count": 24
+		}
+				
+	]
+}
