@@ -1,0 +1,17 @@
+name: Register Device UUID
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        required: true
+        description: 'Device Name'
+        default: ''
+      type:
+        required: true
+        description: 'Device Type'
+        default: ''
+      uuid:
+        required: true
+        description: 'Device UUID'
+        default: ''
+        

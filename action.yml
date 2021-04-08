@@ -1,0 +1,28 @@
+name: 'App Store Connect Register Device'
+description: 'App Store Connect Register Device'
+author: 'a.shaforostov@raketaapp.com'
+
+branding:
+  icon: 'unlock'
+  color: 'green'
+
+inputs:
+  issuer id:
+    description: 'UUID. Can get from App Store Connect.'
+    required: true
+  key id:
+    description: 'Key ID. Can get from App Store Connect.'
+    required: true
+  key:
+    description: 'P8 private key. Can get from App Store Connect.'
+    required: true
+
+outputs:
+  token:
+    description: 'Generated token to use App Store Connect API.'
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.token }}.
+      shell: bash
