@@ -25,3 +25,4 @@ runs:
   using: "composite"
   steps:
     - run: echo Hello ${{ inputs.token }}.
+      shell: bash
