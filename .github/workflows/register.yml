@@ -15,7 +15,7 @@ on:
         description: 'Device UUID'
         default: ''
 jobs:
-  build:
+  register:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
