@@ -6,10 +6,14 @@ on:
         required: true
         description: 'Device Name'
         default: ''
-      device_type:
+      device_uuid:
         required: true
-        description: 'Device Type'
+        description: 'Device UUID'
         default: ''
+      is_personal_device:
+        required: true
+        description: 'Is personal device?'
+        default: true
       device_uuid:
         required: true
         description: 'Device UUID'
@@ -23,6 +27,7 @@ jobs:
         env:
           DEVICE_NAME: ${{ github.event.inputs.device_name }}
           DEVICE_TYPE: ${{ github.event.inputs.device_type }}
+          DEVICE_PERSONAL: ${{ github.event.inputs.is_personal_device }}
           DEVICE_UUID: ${{ github.event.inputs.device_uuid }}
         run: |
           echo ${{ github.event.inputs.device_name }} ${{ github.event.inputs.device_type }}
