@@ -4,7 +4,7 @@ on:
     inputs:
       device_name:
         required: true
-        description: 'Device Name'
+        description: 'Device Name\nExample'
         default: ''
       device_type:
         required: true
@@ -13,7 +13,6 @@ on:
       is_personal_device:
         required: true
         description: 'Is personal device?'
-        deprecationMessage: 'Hello world!'
         default: true
       device_uuid:
         required: true
