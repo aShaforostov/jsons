@@ -6,9 +6,9 @@ on:
         required: true
         description: 'Device Name'
         default: ''
-      device_uuid:
+      device_type:
         required: true
-        description: 'Device UUID'
+        description: 'Device Type'
         default: ''
       is_personal_device:
         required: true
