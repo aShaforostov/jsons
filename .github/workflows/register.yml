@@ -1,17 +1,27 @@
-name: Register Device UUID
+name: Register Device
 on:
   workflow_dispatch:
     inputs:
-      name:
+      device_name:
         required: true
         description: 'Device Name'
         default: ''
-      type:
+      device_type:
         required: true
         description: 'Device Type'
         default: ''
-      uuid:
+      device_uuid:
         required: true
         description: 'Device UUID'
         default: ''
-        
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v2
+      - name: Register Device
+        env:
+          DEVICE_NAME: ${{ github.event.inputs.device_name }}
+          DEVICE_TYPE: ${{ github.event.inputs.device_type }}
+          DEVICE_UUID: ${{ github.event.inputs.device_uuid }}
+        run: |
+          echo ${{ github.event.inputs.device_name }} ${{ github.event.inputs.device_type }}
